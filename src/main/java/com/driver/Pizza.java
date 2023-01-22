@@ -19,7 +19,7 @@ public class Pizza {
         else{
             this.price = 400;
         }
-        this.bill = "Base Price Of The Pizza:"+price+"\n";
+        this.bill = "Base Price Of The Pizza: "+price+"\n";
         this.extraCheese = false;
         this.extraTopping = false;
         this.takeAway = false;
@@ -38,23 +38,23 @@ public class Pizza {
         // your code goes here
         if(billGenerated == false){
             if(extraCheese){
-                bill += "Extra Cheese Added: 80\n";
+                this.bill += "Extra Cheese Added: 80\n";
             }
     
             if(extraTopping){
                 if(isVeg){
-                    bill += "Extra Toppings Added: 70\n";
+                    this.bill += "Extra Toppings Added: 70\n";
                 }
                 else{
-                    bill += "Extra Toppings Added: 120\n";
+                    this.bill += "Extra Toppings Added: 120\n";
                 }
             }
     
             if(takeAway){
-                bill += "Paperbag Added: 20\n";
+                this.bill += "Paperbag Added: 20\n";
             }
     
-            bill += "Total Price:"+price;
+            this.bill += "Total Price: "+price;
             billGenerated = true;
         }
 
